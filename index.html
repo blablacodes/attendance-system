@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Attendance System</h1>
+    <p>Smart Student Attendance Management</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Total Students</h2>
+      <p>120</p>
+    </div>
+
+    <div class="card present">
+      <h2>Present</h2>
+      <p>108</p>
+    </div>
+
+    <div class="card absent">
+      <h2>Absent</h2>
+      <p>12</p>
+    </div>
+  </section>
+
+  <section class="controls">
+    <input type="text" id="search" placeholder="Search Student..." />
+    <button onclick="addStudent()">Add Student</button>
+  </section>
+
+  <section class="table-section">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="studentTable">
+        <tr>
+          <td>CS001</td>
+          <td>Arjun Nair</td>
+          <td><span class="status present-status">Present</span></td>
+          <td><button onclick="markAbsent(this)">Mark Absent</button></td>
+        </tr>
+
+        <tr>
+          <td>CS002</td>
+          <td>Meera S</td>
+          <td><span class="status absent-status">Absent</span></td>
+          <td><button onclick="markPresent(this)">Mark Present</button></td>
+        </tr>
+
+        <tr>
+          <td>CS003</td>
+          <td>Rahul Krishna</td>
+          <td><span class="status present-status">Present</span></td>
+          <td><button onclick="markAbsent(this)">Mark Absent</button></td>
