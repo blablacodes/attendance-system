@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 38px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.present {
+  border-left: 6px solid green;
+}
+
+.absent {
+  border-left: 6px solid red;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.controls input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+}
